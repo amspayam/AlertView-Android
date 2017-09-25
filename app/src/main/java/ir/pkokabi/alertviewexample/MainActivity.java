@@ -4,7 +4,9 @@ import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
+import ir.pkokabi.alertview.AlertView;
 import ir.pkokabi.alertviewexample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,33 +22,33 @@ public class MainActivity extends AppCompatActivity {
         context = this;
 
 
-//        binding.btnError.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new AlertView().show(context, "سلام", AlertView.STATE_ERROR);
-//            }
-//        });
-//
-//        binding.btnSuccess.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new AlertView().show(context, "SUCCESS", AlertView.STATE_SUCCESS);
-//            }
-//        });
-//
-//        binding.btnWarning.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new AlertView().show(context, "WARNING", AlertView.STATE_WARNING);
-//            }
-//        });
-//
-//        binding.btnReload.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                new AlertView().show(context, "RELOAD", AlertView.STATE_RELOAD);
-//            }
-//        });
+        binding.btnError.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertView().show(context, "سلام", AlertView.STATE_ERROR);
+            }
+        });
+
+        binding.btnSuccess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertView().show(context, "SUCCESS", AlertView.STATE_SUCCESS);
+            }
+        });
+
+        binding.btnWarning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertView().show(context, "WARNING", AlertView.STATE_WARNING);
+            }
+        });
+
+        binding.btnReload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertView().show(context, "RELOAD", AlertView.STATE_RELOAD);
+            }
+        });
 
     }
 }
