@@ -29,6 +29,7 @@ public class AlertView implements AlertViewCallBack, View.OnClickListener {
     private Context context;
     private View baseView;
     private AlertView alertView;
+    private static AlertView lastAlertView;
 
     public static final int STATE_ERROR = 0;
     public static final int STATE_WARNING = 1;
@@ -38,7 +39,14 @@ public class AlertView implements AlertViewCallBack, View.OnClickListener {
     private static final Pattern RTL_CHARACTERS =
             Pattern.compile("[\u0600-\u06FF\u0750-\u077F\u0590-\u05FF\uFE70-\uFEFF]");
 
-    public AlertView show(Context context, String message, int actionType) {
+    private AlertView() {
+    }
+
+    public AlertView(Context context, String message, int actionType) {
+        show(context, message, actionType);
+    }
+
+    private AlertView show(Context context, String message, int actionType) {
         return init(context, message, actionType);
     }
 
@@ -86,7 +94,11 @@ public class AlertView implements AlertViewCallBack, View.OnClickListener {
         }
     }
 
-    private AlertView init(Context context, String message, int actionType) {
+    private AlertView init(final Context context, String message, int actionType) {
+        if (lastAlertView != null) {
+            lastAlertView.hideFromWindow(false);
+            lastAlertView = null;
+        }
         alertView = new AlertView();
         alertView.context = context;
         binding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.view_alert_view, null, true);
@@ -103,10 +115,13 @@ public class AlertView implements AlertViewCallBack, View.OnClickListener {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    alertView.hideFromWindow(true);
-                    onFinish();
+                    if (context != null) {
+                        alertView.hideFromWindow(true);
+                        onFinish();
+                    }
                 }
             }, 3000);
+        lastAlertView = alertView;
         return alertView;
     }
 
@@ -130,26 +145,30 @@ public class AlertView implements AlertViewCallBack, View.OnClickListener {
     }
 
     private void showInWindow() {
-        this.baseView.setTag(this);
+        baseView.setTag(this);
         try {
-            ((Activity) this.context).getWindowManager().addView(this.baseView, getActionBarLayoutParams(this.context));
-            this.baseView.getViewTreeObserver().addOnGlobalLayoutListener(new AlertViewListener());
+            ((Activity) this.context).getWindowManager().addView(baseView, getActionBarLayoutParams(this.context));
+            baseView.getViewTreeObserver().addOnGlobalLayoutListener(new AlertViewListener());
         } catch (Exception ignored) {
         }
     }
 
     private void hideFromWindow(boolean animate) {
-        if (this.baseView != null && this.baseView.getWindowToken() != null) {
-            if (animate) {
-                int h = this.baseView.getHeight();
-                ObjectAnimator oa = ObjectAnimator.ofFloat(this.baseView, "translationY", 0.0f, (float) (-h));
-                oa.setDuration(250);
-                oa.addListener(new ShowHideAnimation());
-                oa.start();
-                return;
+        try {
+            if (baseView != null && baseView.getWindowToken() != null) {
+                if (animate) {
+                    int h = baseView.getHeight();
+                    ObjectAnimator oa = ObjectAnimator.ofFloat(baseView, "translationY", 0.0f, (float) (-h));
+                    oa.setDuration(250);
+                    oa.addListener(new ShowHideAnimation());
+                    oa.start();
+                    return;
+                }
+                ((Activity) this.context).getWindowManager().removeViewImmediate(baseView);
+                baseView = null;
             }
-            ((Activity) this.context).getWindowManager().removeViewImmediate(this.baseView);
-            this.baseView = null;
+        } catch (Exception ignored) {
+
         }
     }
 
