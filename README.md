@@ -16,7 +16,7 @@ Add JitPack repository in your root build.gradle at the end of repositories.
 Add dependency in your app level build.gradle.
 
     dependencies {
-	        compile 'com.github.amspayam:AlertView-Android:1.0.1'
+	        compile 'com.github.amspayam:AlertView-Android:1.0.3'
 	}
    
 #### Step 2
