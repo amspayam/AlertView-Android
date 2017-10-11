@@ -4,10 +4,10 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         app:cardBackgroundColor="@color/cardview_light_background"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
         app:cardUseCompatPadding="true"
         app:contentPadding="8dp">
 
@@ -33,6 +33,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_toStartOf="@+id/dialogImgv"
+                android:lineSpacingExtra="10dp"
+                android:lineSpacingMultiplier="1"
                 android:textColor="#444"
                 android:textSize="@dimen/textSize" />
 
