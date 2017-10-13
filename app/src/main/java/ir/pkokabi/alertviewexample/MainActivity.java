@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import ir.pkokabi.alertview.AlertView;
 import ir.pkokabi.alertviewexample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnReload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new AlertView(context, "RELOAD", AlertView.STATE_RELOAD);
+                new AlertView(context, "سلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلامسلام", AlertView.STATE_RELOAD);
             }
         });
 

@@ -1,5 +1,5 @@
 <resources>
-    <dimen name="textSize">17sp</dimen>
+    <dimen name="textSize">13sp</dimen>
     <dimen name="marginAlertView">8dp</dimen>
     <dimen name="paddingContentAlertView">16dp</dimen>
     <dimen name="cardElevationAlertView">8dp</dimen>
