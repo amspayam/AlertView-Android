@@ -1,9 +1,6 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AlertView--Android-green.svg?style=flat )]( https://android-arsenal.com/details/1/6404 )
 # AlertView-Android 
 Android Library to show a beautiful Alert View
-
-
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AlertView--Android-green.svg?style=flat )]( https://android-arsenal.com/details/1/6404 )
-
 ## Usage:
 #### Step 1
 
