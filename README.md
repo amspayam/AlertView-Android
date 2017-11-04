@@ -24,3 +24,13 @@ use in Java Code
 ```Java
 new AlertView().show(context, stringMessage, AlertView.STATE_ERROR);
 ```
+
+```Java
+new AlertView(context, stringMessage, AlertView.STATE_RELOAD) {
+    @Override
+    public void onRefresh() {
+        super.onRefresh();
+        //Methods you need to call on reload click
+    }
+};
+```
