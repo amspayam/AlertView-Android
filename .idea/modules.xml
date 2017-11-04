@@ -3,16 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlertView-Android.iml" filepath="$PROJECT_DIR$/AlertView-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AlertView-Android.iml" filepath="$PROJECT_DIR$/AlertView-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AlertView-Android.iml" filepath="$PROJECT_DIR$/AlertView-Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AlertView-Android.iml" filepath="$PROJECT_DIR$/AlertView-Android.iml" />
+      <module fileurl="file://C:\Users\p.kokabi.7SANG-GROUP\Desktop\AlertView-Android\AlertView-Android.iml" filepath="C:\Users\p.kokabi.7SANG-GROUP\Desktop\AlertView-Android\AlertView-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
