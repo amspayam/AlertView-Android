@@ -1,8 +1,7 @@
 <resources>
     <dimen name="textSize">12sp</dimen>
-    <dimen name="marginAlertView">8dp</dimen>
     <dimen name="paddingContentAlertView">8dp</dimen>
-    <dimen name="cardElevationAlertView">8dp</dimen>
-    <dimen name="radiusAlertView">16dp</dimen>
+    <dimen name="cardElevationAlertView">4dp</dimen>
+    <dimen name="radiusAlertView">8dp</dimen>
     <dimen name="lineSpacingAlertView">5dp</dimen>
 </resources>

@@ -2,17 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.0"
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "ir.pkokabi.alertviewexample"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-    }
-
-    dataBinding {
-        enabled true
     }
 
     buildTypes {
@@ -24,7 +20,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     /*AlertView*/
-    compile 'com.github.amspayam:AlertView-Android:1.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation project(path: ':alertview')
 }

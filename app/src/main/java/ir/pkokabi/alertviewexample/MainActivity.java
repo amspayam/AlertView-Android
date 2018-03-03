@@ -1,18 +1,15 @@
 package ir.pkokabi.alertviewexample;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import ir.pkokabi.alertview.AlertView;
-import ir.pkokabi.alertviewexample.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    ActivityMainBinding binding;
     Context context;
 
     boolean doubleBackToExitPressedOnce = false;
@@ -22,32 +19,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         context = this;
 
 
-        binding.btnError.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnError).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new AlertView(context, "Error", AlertView.STATE_ERROR);
             }
         });
 
-        binding.btnSuccess.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnSuccess).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new AlertView(context, "SUCCESS", AlertView.STATE_SUCCESS);
             }
         });
 
-        binding.btnWarning.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnWarning).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new AlertView(context, "WARNING", AlertView.STATE_WARNING);
             }
         });
 
-        binding.btnReload.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnReload).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new AlertView(context, "Reload Task", AlertView.STATE_RELOAD){
