@@ -1,7 +1,7 @@
 # AlertView-Android 
 Android Library to show a beautiful Alert View
 <br/>
-[![](https://jitpack.io/v/rasoulmiri/skeleton.svg)](https://jitpack.io/#rasoulmiri/skeleton)
+[![](https://jitpack.io/v/amspayam/AlertView-Android.svg)](https://jitpack.io/#amspayam/AlertView-Android)
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-AlertView--Android-green.svg?style=flat )]( https://android-arsenal.com/details/1/6404 )
 <br/>
 Minimum API 17
