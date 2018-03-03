@@ -1,3 +1,0 @@
--dontwarn android.databinding.**
--keep class android.databinding.** { *; }
--keep class ir.pkokabi.alertview.** {*;}
