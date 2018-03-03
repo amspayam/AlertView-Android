@@ -4,14 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AlertView-Android.iml" filepath="$PROJECT_DIR$/.idea/AlertView-Android.iml" />
       <module fileurl="file://E:\Projects\AlertView-Android\AlertView-Android.iml" filepath="E:\Projects\AlertView-Android\AlertView-Android.iml" />
-      <module fileurl="file://F:\Projects\AlertView-Android\.idea\AlertView-Android.iml" filepath="F:\Projects\AlertView-Android\.idea\AlertView-Android.iml" />
       <module fileurl="file://C:\Users\p.kokabi.7SANG-GROUP\Desktop\AlertView-Android\AlertView-Android.iml" filepath="C:\Users\p.kokabi.7SANG-GROUP\Desktop\AlertView-Android\AlertView-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
-      <module fileurl="file://F:\Projects\AlertView-Android\alertview\alertview.iml" filepath="F:\Projects\AlertView-Android\alertview\alertview.iml" />
       <module fileurl="file://E:\Projects\AlertView-Android\alertview\alertview.iml" filepath="E:\Projects\AlertView-Android\alertview\alertview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://E:\Projects\AlertView-Android\app\app.iml" filepath="E:\Projects\AlertView-Android\app\app.iml" />
-      <module fileurl="file://F:\Projects\AlertView-Android\app\app.iml" filepath="F:\Projects\AlertView-Android\app\app.iml" />
     </modules>
   </component>
 </project>
